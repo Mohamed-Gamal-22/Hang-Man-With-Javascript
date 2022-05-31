@@ -1,0 +1,336 @@
+.hangManDraw {
+  background-color: #09c;
+  width: 7px;
+  height: 400px;
+  position: relative;
+  opacity: 0;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+}
+
+.hangManDraw.wrong-1 {
+  opacity: 1;
+}
+
+.hangManDraw::before {
+  content: "";
+  position: absolute;
+  top: 50px;
+  left: 100%;
+  width: 200px;
+  height: 7px;
+  background-color: #09c;
+  opacity: 0;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+}
+.hangManDraw.wrong-2::before {
+  opacity: 1;
+}
+
+.hangManDraw::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 100%;
+  width: 120px;
+  height: 7px;
+  background-color: #09c;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  opacity: 0;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+}
+.hangManDraw.wrong-3::after {
+  opacity: 1;
+}
+
+.hangManDraw .hang::after {
+  content: "";
+  position: absolute;
+  top: 50px;
+  left: 200px;
+  width: 7px;
+  height: 40px;
+  background-color: #09c;
+  opacity: 0;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+}
+.hangManDraw.wrong-4 .hang::after {
+  opacity: 1;
+}
+
+.hangManDraw .rope::after {
+  content: "";
+  position: absolute;
+  top: 90px;
+  left: 163px;
+  width: 80px;
+  height: 80px;
+  background-color: transparent;
+  border: 4px dashed #09c;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  opacity: 0;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+}
+.hangManDraw.wrong-5 .rope::after {
+  opacity: 1;
+}
+
+.hangManDraw .head::after {
+  content: "";
+  position: absolute;
+  top: 106px;
+  left: 178px;
+  width: 50px;
+  height: 50px;
+  background-color: transparent;
+  border: 4px solid black;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  opacity: 0;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+}
+.hangManDraw.wrong-6 .head::after {
+  opacity: 1;
+}
+
+.hangManDraw .body::after {
+  content: "";
+  position: absolute;
+  top: 152px;
+  left: 202px;
+  width: 4px;
+  height: 180px;
+  background-color: black;
+  opacity: 0;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+}
+.hangManDraw.wrong-7 .body::after {
+  opacity: 1;
+}
+
+.hangManDraw .rightHand::after {
+  content: "";
+  position: absolute;
+  top: 159px;
+  left: 167px;
+  width: 4px;
+  height: 92px;
+  background-color: black;
+  transform: rotate(-55deg);
+  -webkit-transform: rotate(-55deg);
+  -moz-transform: rotate(-55deg);
+  -ms-transform: rotate(-55deg);
+  -o-transform: rotate(-55deg);
+  opacity: 0;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+}
+.hangManDraw.wrong-8 .rightHand::after {
+  opacity: 1;
+}
+
+.hangManDraw .leftHand::after {
+  content: "";
+  position: absolute;
+  top: 158px;
+  left: 239px;
+  width: 4px;
+  height: 92px;
+  background-color: black;
+  transform: rotate(55deg);
+  -webkit-transform: rotate(55deg);
+  -moz-transform: rotate(55deg);
+  -ms-transform: rotate(55deg);
+  -o-transform: rotate(55deg);
+  opacity: 0;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+}
+.hangManDraw.wrong-8 .leftHand::after {
+  opacity: 1;
+}
+
+.hangManDraw .leftLeg::after {
+  content: "";
+  position: absolute;
+  top: 309px;
+  left: 165px;
+  width: 4px;
+  height: 85px;
+  background-color: black;
+  transform: rotate(-120deg);
+  -webkit-transform: rotate(-120deg);
+  -moz-transform: rotate(-120deg);
+  -ms-transform: rotate(-120deg);
+  -o-transform: rotate(-120deg);
+  opacity: 0;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+}
+.hangManDraw.wrong-9 .leftLeg::after {
+  opacity: 1;
+}
+
+.hangManDraw .rightLeg::after {
+  content: "";
+  position: absolute;
+  top: 309px;
+  left: 240px;
+  width: 4px;
+  height: 85px;
+  background-color: black;
+  transform: rotate(120deg);
+  -webkit-transform: rotate(120deg);
+  -moz-transform: rotate(120deg);
+  -ms-transform: rotate(120deg);
+  -o-transform: rotate(120deg);
+  opacity: 0;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+}
+.hangManDraw.wrong-9 .rightLeg::after {
+  opacity: 1;
+}
+.letters {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  flex-wrap: wrap;
+  width: 80%;
+  margin: auto;
+}
+.letters.finished {
+  pointer-events: none;
+}
+
+.letters .letter-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  background-color: #09c;
+  padding: 15px;
+  margin: 5px;
+  text-align: center;
+  color: #fff;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-size: 20px;
+}
+.letters .letter-box.clicked {
+  background-color: rgb(38, 67, 77);
+  pointer-events: none;
+}
+.guess {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.guess span {
+  width: 45px;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #09c;
+  color: #fff;
+  margin: 15px;
+  text-transform: uppercase;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+/*/////////////////////////////////////////////////////*/
+
+.answer,
+.answer1 {
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.answer .popup,
+.answer1 .popup {
+  width: 650px;
+  height: 250px;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  font-size: 18px;
+}
+
+.answer .popup i,
+.answer1 .popup i {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+.uuu {
+  display: none !important  ;
+}
